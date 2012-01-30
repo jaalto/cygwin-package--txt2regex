@@ -1,0 +1,353 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 03_add_ca_CA.po.dpatch by  <rene@zero>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No description.
+
+@DPATCH@
+diff -urNad txt2regex-0.8/po/ca.po /tmp/dpep.iwtAuJ/txt2regex-0.8/po/ca.po
+--- txt2regex-0.8/po/ca.po	1970-01-01 01:00:00.000000000 +0100
++++ /tmp/dpep.iwtAuJ/txt2regex-0.8/po/ca.po	2004-11-17 16:06:34.000000000 +0100
+@@ -0,0 +1,342 @@
++msgid ""
++msgstr ""
++"Project-Id-Version: txt2regex 0.9\n"
++"POT-Creation-Date: 2004-09-29 16:21 BRT\n"
++"PO-Revision-Date: 2004-11-16 10:52+0100\n"
++"Last-Translator: ChAOS ChAoS@gmail.com\n"
++"Language-Team: Catalan team\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=ISO-8859-1\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Generator: KBabel 1.9.1\n"
++
++#: ../txt2regex-0.9.sh:101
++msgid "usage: txt2regex [ --nocolor | --whitebg ] [ --all | --prog PROGRAMS ]"
++msgstr "ús: txt2regex [ --nocolor | --whitebg ] [ --all | --prog PROGRAMES ]"
++
++#: ../txt2regex-0.9.sh:102
++msgid "       txt2regex --showmeta"
++msgstr "       txt2regex --showmeta"
++
++#: ../txt2regex-0.9.sh:103
++msgid "       txt2regex --showinfo PROGRAM [ --nocolor ]"
++msgstr "       txt2regex --showinfo PROGRAMA [ --nocolor ]"
++
++#: ../txt2regex-0.9.sh:104
++msgid "       txt2regex --history VALUE [ --all | --prog PROGRAMS ]"
++msgstr "       txt2regex --history VALOR [ --all | --prog PROGRAMES ]"
++
++#: ../txt2regex-0.9.sh:105
++msgid "       txt2regex --make LABEL [ --all | --prog PROGRAMS ]"
++msgstr "       txt2regex --make ETIQUETA [ --all | --prog PROGRAMES ]"
++
++#: ../txt2regex-0.9.sh:107
++msgid "OPTIONS (they are default OFF):"
++msgstr "OPCIONS (per defecte estan en OFF):"
++
++#: ../txt2regex-0.9.sh:109
++msgid "  --all               Works with all registered programs"
++msgstr "  --all               Funciona amb tots els programes registrats"
++
++#: ../txt2regex-0.9.sh:110
++msgid "  --nocolor           Don't use colors"
++msgstr "  --nocolor           No fa servir colors"
++
++#: ../txt2regex-0.9.sh:111
++msgid "  --whitebg           Colors adjusted for white background terminals"
++msgstr "  --whitebg           Colors ajustats per a terminals amb fons blanc"
++
++#: ../txt2regex-0.9.sh:112
++msgid "  --prog PROGRAMS     Choose which programs to use, separated by commas"
++msgstr "  --prog PROGRAMES     Tria quins programes vols fer servir, separats per comes"
++
++#: ../txt2regex-0.9.sh:114
++msgid "  --showmeta          Prints a metacharacters table with all programs"
++msgstr "  --showmeta          Imprimeix una taula de metacaràcters amb tots els programes"
++
++#: ../txt2regex-0.9.sh:115
++msgid "  --showinfo PROGRAM  Prints regex info about the specified program"
++msgstr "  --showinfo PROGRAMA  Imprimeix la informació regex sobre el programa especificat"
++
++#: ../txt2regex-0.9.sh:116
++msgid "  --history VALUE     Prints a regex from the given history data"
++msgstr "  --history VALOR     Imprimeix el regex de l'arxiu d'historial donat"
++
++#: ../txt2regex-0.9.sh:117
++msgid "  --make LABEL        Prints the default regex for the specified label"
++msgstr "  --make ETIQUETA        Imprimeix el regex per defecte per l'etiqueta especificada"
++
++#: ../txt2regex-0.9.sh:119
++msgid "  --version           Prints the program version and quit"
++msgstr "  --version           Imprimeix la versió del programa i surt"
++
++#: ../txt2regex-0.9.sh:120
++msgid "  --help              Prints the help message and quit"
++msgstr "  --help              Imprimeix el missatge d'ajuda i surt"
++
++#: ../txt2regex-0.9.sh:122
++msgid "Please read the program Man Page for more information."
++msgstr "Per a més informació, llegeixi la pàgina Man del programa"
++
++#: ../txt2regex-0.9.sh:181
++msgid "invalid argument"
++msgstr "Argument invàl·lid"
++
++#: ../txt2regex-0.9.sh:182
++msgid "valid names are:"
++msgstr "els noms vàl·lids són:"
++
++##duplicated##: ../txt2regex-0.9.sh:192
++#: ../txt2regex-0.9.sh:202
++msgid "invalid option"
++msgstr "opció invàl·lida"
++
++#: ../txt2regex-0.9.sh:213
++msgid "start to match"
++msgstr "començar a casar"
++
++#: ../txt2regex-0.9.sh:214
++msgid "on the line beginning"
++msgstr "a principi de línia"
++
++#: ../txt2regex-0.9.sh:215
++msgid "in any part of the line"
++msgstr "a qualsevol part de la línia"
++
++#: ../txt2regex-0.9.sh:219
++msgid "followed by"
++msgstr "seguit de"
++
++#: ../txt2regex-0.9.sh:220
++msgid "any character"
++msgstr "qualsevol caràcter"
++
++#: ../txt2regex-0.9.sh:221
++msgid "a specific character"
++msgstr "un caracter específic"
++
++#: ../txt2regex-0.9.sh:222
++msgid "a literal string"
++msgstr "una cadena literal"
++
++#: ../txt2regex-0.9.sh:223
++msgid "an allowed characters list"
++msgstr "una llista de caràcters permesos"
++
++#: ../txt2regex-0.9.sh:224
++msgid "a forbidden characters list"
++msgstr "una llista de caràcters prohibits"
++
++#: ../txt2regex-0.9.sh:225
++msgid "a special combination"
++msgstr "una combinació especial"
++
++#: ../txt2regex-0.9.sh:226
++msgid "a POSIX combination (locale aware)"
++msgstr "una combinació POSIX (subjecte a localització)"
++
++#: ../txt2regex-0.9.sh:227
++msgid "a ready regex (not implemented)"
++msgstr "una regex preparada (sense implementar)"
++
++#: ../txt2regex-0.9.sh:228
++msgid "anything"
++msgstr "qualsevol cosa"
++
++#: ../txt2regex-0.9.sh:232
++msgid "how many times (repetition)"
++msgstr "quantes vegades (repetició)"
++
++#: ../txt2regex-0.9.sh:233
++msgid "one"
++msgstr "una"
++
++#: ../txt2regex-0.9.sh:234
++msgid "zero or one (optional)"
++msgstr "una o cap (opcional)"
++
++#: ../txt2regex-0.9.sh:235
++msgid "zero or more"
++msgstr "cap o més"
++
++#: ../txt2regex-0.9.sh:236
++msgid "one or more"
++msgstr "una o més"
++
++#: ../txt2regex-0.9.sh:237
++msgid "exactly N"
++msgstr "exactament N"
++
++#: ../txt2regex-0.9.sh:238
++msgid "up to N"
++msgstr "fins a N"
++
++#: ../txt2regex-0.9.sh:239
++msgid "at least N"
++msgstr "almenys N"
++
++#: ../txt2regex-0.9.sh:243
++msgid "uppercase letters"
++msgstr "lletres majúscules"
++
++#: ../txt2regex-0.9.sh:244
++msgid "lowercase letters"
++msgstr "lletres minúscules"
++
++#: ../txt2regex-0.9.sh:245
++msgid "numbers"
++msgstr "nombres"
++
++#: ../txt2regex-0.9.sh:246
++msgid "underscore"
++msgstr "barra baixa"
++
++#: ../txt2regex-0.9.sh:247
++msgid "space"
++msgstr "espai"
++
++#: ../txt2regex-0.9.sh:248
++msgid "TAB"
++msgstr "Tabulador (TAB)"
++
++#: ../txt2regex-0.9.sh:253
++msgid "letters"
++msgstr "lletres"
++
++##duplicated##: ../txt2regex-0.9.sh:254
++##duplicated##: ../txt2regex-0.9.sh:255
++##duplicated##: ../txt2regex-0.9.sh:256
++#: ../txt2regex-0.9.sh:257
++msgid "letters and numbers"
++msgstr "lletres i nombres"
++
++#: ../txt2regex-0.9.sh:258
++msgid "hexadecimal numbers"
++msgstr "nombres hexadecimals"
++
++#: ../txt2regex-0.9.sh:259
++msgid "whitespaces (space and TAB)"
++msgstr "espais en blanc (espais i tabuladors)"
++
++#: ../txt2regex-0.9.sh:260
++msgid "graphic chars (not-whitespace)"
++msgstr "caràcters gràfics (no espais en blanc)"
++
++#: ../txt2regex-0.9.sh:265
++msgid "quit"
++msgstr "sortir"
++
++#: ../txt2regex-0.9.sh:266
++msgid "reset"
++msgstr "reiniciar"
++
++#: ../txt2regex-0.9.sh:267
++msgid "color"
++msgstr "color"
++
++#: ../txt2regex-0.9.sh:268
++msgid "programs"
++msgstr "programes"
++
++#: ../txt2regex-0.9.sh:274
++msgid "or"
++msgstr "o"
++
++#: ../txt2regex-0.9.sh:275
++msgid "open group"
++msgstr "obrir grup"
++
++#: ../txt2regex-0.9.sh:276
++msgid "close group"
++msgstr "tancar grup"
++
++#: ../txt2regex-0.9.sh:277
++msgid "not supported"
++msgstr "sense suport"
++
++#: ../txt2regex-0.9.sh:402
++msgid "NOTE: . [] [^] and * are the same on all programs."
++msgstr "NOTA: . [] [^] i * són el mateix en tots els programes."
++
++#: ../txt2regex-0.9.sh:406
++msgid "NO"
++msgstr "NO"
++
++##duplicated##: ../txt2regex-0.9.sh:406
++#: ../txt2regex-0.9.sh:415
++msgid "unknown program"
++msgstr "programa desconegut"
++
++#: ../txt2regex-0.9.sh:416
++msgid "YES"
++msgstr "SÍ"
++
++##duplicated##: ../txt2regex-0.9.sh:417
++#: ../txt2regex-0.9.sh:424
++msgid "program"
++msgstr "programa"
++
++#: ../txt2regex-0.9.sh:424
++msgid "metas"
++msgstr "metes"
++
++#: ../txt2regex-0.9.sh:424
++msgid "esc meta"
++msgstr "esc meta"
++
++#: ../txt2regex-0.9.sh:424
++msgid "need esc"
++msgstr "esc necessari"
++
++#: ../txt2regex-0.9.sh:424
++msgid "\\t en []"
++msgstr "\\t a []"
++
++#: ../txt2regex-0.9.sh:424
++msgid "[:POSIX:]"
++msgstr "[:POSIX:]"
++
++#: ../txt2regex-0.9.sh:456
++msgid ""
++"error:\n"
++"  your screen has %s lines and should have at least %s to this\n"
++"  program fit on it. increase the number of lines or select\n"
++"  less programs to show the regex.\\n\\n"
++msgstr ""
++"error:\n"
++"  la seva pantalla té %s línies i n'hauria de tenir almenys %s per\n"
++"  poder-hi encabir aquest programa. amplïi'n el nombre o seleccioni\n"
++"  menys programes a mostrar les regex.\\n\\n"
++
++#: ../txt2regex-0.9.sh:573
++msgid "which one?"
++msgstr "quin?"
++
++#: ../txt2regex-0.9.sh:585
++msgid "which?"
++msgstr "quin?"
++
++#: ../txt2regex-0.9.sh:761
++msgid "exit"
++msgstr "sortir"
++
++#: ../txt2regex-0.9.sh:762
++msgid "press the letters to (un)select the items"
++msgstr "pressioni les lletres per (des)seleccionar "
++
++#: ../txt2regex-0.9.sh:876
++msgid "repeated"
++msgstr "repetit"
++
++#: ../txt2regex-0.9.sh:877
++msgid "times"
++msgstr "vegades"
++
++#: ../txt2regex-0.9.sh:884
++msgid "Really quit?"
++msgstr "Realment vols sortir?"
++
++#: ../txt2regex-0.9.sh:897
++msgid "no regex"
++msgstr "sense regex"
++

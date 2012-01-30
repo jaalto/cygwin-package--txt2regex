@@ -1,0 +1,65 @@
+txt2regex
+------------------------------------------
+
+A Regular Expression wizard, all written with bash2 builtins
+
+A program that converts human sentences to RegExs. With a simple
+interface, you just answer to questions and build your own RegEx for a
+large variety of programs, like awk, emacs, grep, perl, php, procmail,
+python, sed and vim. There are more than 20 supported programs.
+
+Runtime requirements:
+  cygwin
+
+Build requirements:
+  cygwin
+
+Canonical homepage:
+  http://www.sourceforge.net/projects/txt2regex
+  http://packages.debian.org/unstable/txt2regex
+
+Canonical download:
+  See above
+
+Version control repository:
+
+Mailing list:
+
+Forum / Wiki:
+
+IRC channel:
+
+Upstream contact:
+  Maintainer: Aurelio Jargas <aureliojargas@users.sourceforge.net>, <verde@verde666.org>
+  Bugs: Sourceforge
+
+License:
+  GPL
+
+Language:
+  Bash Shell
+
+------------------------------------------
+
+Build instructions:
+  unpack txt2regex-*-src.tar.bz2
+    if you use setup to install this src package, it will be
+    unpacked under /usr/src automatically
+  cd /usr/src
+  ./txt2regex*.sh all
+
+------------------------------------------
+
+Files included in the binary distribution:
+  See content of *.tar.gz
+
+------------------------------------------
+
+Port Notes:
+- No manual page. Copied from Debian.
+
+----- version 0.8-1 -----
+- Initial release 2008-03-03 Jari Aalto
+
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2008 Jari Aalto; Licensed under GPL v2 or later
