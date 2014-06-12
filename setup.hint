@@ -4,4 +4,4 @@ interface, you just answer to questions and build your own RegEx for a
 large variety of programs, like awk, emacs, grep, perl, php, procmail,
 python, sed and vim. There are more than 20 supported programs."
 category: Utils
-requires: cygwin
+requires:

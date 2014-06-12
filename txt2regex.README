@@ -51,15 +51,19 @@ Build instructions:
 ------------------------------------------
 
 Files included in the binary distribution:
-  See content of *.tar.gz
+  See Cygwin package archive
 
 ------------------------------------------
 
 Port Notes:
 - No manual page. Copied from Debian.
 
+----- version 0.8-2 -----
+- New release 2014-06-12 Jari Aalto
+- Activate some debian patches
+
 ----- version 0.8-1 -----
 - Initial release 2008-03-03 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2008 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2008-2014 Jari Aalto; Licensed under GPL v2 or later
