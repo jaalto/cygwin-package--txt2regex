@@ -1,0 +1,37 @@
+#!/bin/sh -e
+## 01_fix_makefile.dpatch by Rene Engelhard <rene@debian.org>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: fix install target in Makefile
+
+if [ $# -ne 1 ]; then
+    echo >&2 "`basename $0`: script expects -patch|-unpatch as argument"
+    exit 1
+fi
+
+[ -f debian/patches/00patch-opts ] && . debian/patches/00patch-opts
+patch_opts="${patch_opts:--f --no-backup-if-mismatch}"
+
+case "$1" in
+       -patch) patch $patch_opts -p1 < $0;;
+       -unpatch) patch $patch_opts -p1 -R < $0;;
+        *)
+                echo >&2 "`basename $0`: script expects -patch|-unpatch as argument"
+                exit 1;;
+esac
+
+exit 0
+
+@DPATCH@
+diff -urNad /home/rene/Debian/Pakete/txt2regex/txt2regex-0.7/Makefile txt2regex-0.7/Makefile
+--- /home/rene/Debian/Pakete/txt2regex/txt2regex-0.7/Makefile	2003-04-23 18:29:40.000000000 +0200
++++ txt2regex-0.7/Makefile	2003-04-23 18:42:16.000000000 +0200
+@@ -94,7 +94,7 @@
+ 		[ -d $$modir ] || mkdir -p $$modir; \
+ 		install -m644 $(PODIR)/$$pot $$modir/$(NAME).mo; \
+ 	done; \
+-	sed -e '/^TEXTDOMAINDIR=/s,=.*,=$(LOCALEDIR),' \
++	sed -e '/^TEXTDOMAINDIR=/s,=.*,=/usr/share/locale,' \
+ 	    -e '/^VERSION=/s/=.*/=$(VERSION)/' $(SHSKEL) > $(BINDIR)/$(NAME) && \
+ 	chmod +x $(BINDIR)/$(NAME) && \
+ 	echo "program '$(NAME)' installed. just run $(BINDIR)/$(NAME)"

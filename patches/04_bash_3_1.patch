@@ -1,0 +1,19 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 01_bash_3_1.dpatch by  <rene@frodo>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No description.
+
+@DPATCH@
+diff -urNad txt2regex-0.8~/txt2regex-0.8.sh txt2regex-0.8/txt2regex-0.8.sh
+--- txt2regex-0.8~/txt2regex-0.8.sh	2004-09-28 21:51:01.000000000 +0200
++++ txt2regex-0.8/txt2regex-0.8.sh	2006-01-23 23:23:53.000000000 +0100
+@@ -517,7 +517,7 @@
+ 
+ doMenu(){
+   local -a Menui
+-  eval Menui=(\"\${$1[@]}\"); menu_n=$((${#Menui[*]}-1))    # ini
++  eval Menui=\(\"\${$1[@]}\"\); menu_n=$((${#Menui[*]}-1))    # ini
+ 
+   if [ "$f_i" == 1 ]; then
+     gotoxy $x_hist $y_hist
